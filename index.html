@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="download.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="download.png" width="70px" alt="">
+        </div>
+        <div class="links">
+            <button><a href="index.html">Assignment # 1</a></button>
+            <button><a href="assign2.html">Assignment # 2</a></button>
+            <button><a href="assign3.html">Assignment # 3</a></button>
+            <button><a href="assign4.html">Assignment # 4</a></button>
+           
+        </div>
+    </div>
+    <br>
+    <h1>Assignment # 7
+    </h1>
+    <h4>JAVASCRIPT</h4>
+
+    <script>
+// question 1
+var a = 10
+document.write("Result: <br> The value of a is: 10 <br> <br> ----------------------------------")
+var a = ++a
+document.write("<br>"+"<br>"+ "The value of ++a is: "+ a)
+document.write("<br>"+"Now the value of a is: " + a)
+var a = a++
+document.write("<br>"+"<br>"+"The value of a++ is: "+ a++)
+document.write("<br>"+"Now The value of a is: "+ a)
+var a = --a
+document.write("<br>"+"<br>"+"The value of --a is: "+a)
+document.write("<br>"+"Now The value of a is: "+a)
+var a = a--
+document.write("<br>"+"<br>"+"The value of a-- is: "+a--)
+document.write("<br>"+"Now The value of a is: "+a)
+// question 2
+document.write("<br>"+"<h1>Second Question</h1>")
+var a = 2;
+var b = 1;
+var result = --a - --b + ++b +b--
+document.write("The value of a = 2")
+document.write( "<br>"+"The value of b = 1")
+document.write("<br>"+" The question is --a - --b + ++b + b-- ?")
+document.write("<br>"+"a = "+a)
+document.write("<br>"+"b = "+b)
+document.write("<br>"+"Answer is --a - --b + ++b + b-- = "+ result+" ")
+// question 3
+var userName = prompt("Enter Your Name")
+    alert("Welcome "+userName)
+// question 5
+var number = prompt("Enter Table Number 1 to 10")
+document.write("<h4>Table  </h4>")
+document.write(""+number+" x 1 = " + number*1  )
+document.write("<br>"+""+number+" x 2 = " + number*2  )
+document.write("<br>"+""+number+" x 3 = " + number*3  )
+document.write("<br>"+""+number+" x 4 = " + number*4  )
+document.write("<br>"+""+number+" x 5 = " + number*5  )
+document.write("<br>"+""+number+" x 6 = " + number*6  )
+document.write("<br>"+""+number+" x 7 = " + number*7  )
+document.write("<br>"+""+number+" x 8 = " + number*8  )
+document.write("<br>"+""+number+" x 9 = " + number*9  )
+document.write("<br>"+""+number+" x 10 = " + number*10  )
+
+// question 6
+
+document.write("<h3>Marksheet</h3>")
+var sub1 = +prompt("Enter 1st Subject Number")
+var sub2 = +prompt("Enter 2nd Subject Number")
+var sub3 = +prompt("Enter 3rd Subject Number")
+var obt = sub1 + sub2 + sub3 
+var total = 300
+var per = (obt/total*100)
+document.write("<br>"+ "English : "+ sub1)
+document.write("<br>"+ "Urdu : "+ sub2)
+document.write("<br>"+ "Mathematics : "+ sub3)
+document.write("<br>"+"Obtained Marks : "+ obt)
+document.write("<br>"+"Total Marks : "+ total)
+document.write("<br>"+"Percentage : "+per +"%")
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

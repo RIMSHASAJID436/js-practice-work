@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="download.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="download.png" width="70px" alt="">
+        </div>
+        <div class="links">
+            <button><a href="index.html">Assignment # 1</a></button>
+            <button><a href="assign2.html">Assignment # 2</a></button>
+            <button><a href="assign3.html">Assignment # 3</a></button>
+            <button><a href="assign4.html">Assignment # 4</a></button>
+           
+        </div>
+    </div>
+    <br>
+    <h1>Assignment # 7
+    </h1>
+    <h4>JAVASCRIPT</h4>
+    <h1>
+        <center>LOOP</center>
+    </h1>
+
+    <script>
+        // question 1
+        var emptyArr = [[], [], []]
+        // question 2
+        var arr = [[0, 1, 2, 3], [1, 0, 1, 2], [2, 1, 0, 1]]
+        for (var i = 0; i < arr.length; i++) {
+            for (var j = 0; j < arr[i].length; j++) {
+                document.write(arr[i][j])
+            }
+            document.write("<br>")
+        }
+        // question 3
+        // var numbers=[1,2,3,4,5,6,7,8,9,10]
+        for (var i = 1; i <= 10; i++) {
+            document.write(i + "<br>")
+        }
+
+        // question 4
+        var table = prompt("Enter A Table Number")
+        var lenght = prompt("Enter A Table Lenght")
+        for (var i = 1; i <= lenght; i++) {
+            document.write(table + " X " + i + " = " + table * i + "<br>")
+        }
+        // question 5
+        var fruits = ["Apple", "Banana", "Mango", "Orange", "Strawberry"]
+        document.write(fruits + "<br>")
+        document.write("Element at index 0 is " + fruits[0] + "<br>")
+        document.write("Element at index 1 is " + fruits[1] + "<br>")
+        document.write("Element at index 2 is " + fruits[2] + "<br>")
+        document.write("Element at index 3 is " + fruits[3] + "<br>")
+        document.write("Element at index 4 is " + fruits[4] + "<br>")
+        // question 6
+        document.write("<h2>Counting</h2>")
+        for (var i = 1; i <= 15; i++) {
+            document.write(i + ",")
+        }
+        //  reverse counting
+        document.write("<h2>Reverse Counting</h2>")
+        for (var i = 10; i >= 0; i--) {
+            document.write(i + ",")
+        }
+        // even numbers 
+        document.write("<h2>Even Numbers</h2>")
+        for (var i = 2; i < 21; i += 2) {
+            document.write(i + ",")
+        }
+        // odd numbers 
+        document.write("<h2>Odd Numbers</h2>")
+        for (var i = 1; i < 20; i += 2) {
+            document.write(i + ",")
+        }
+        // series
+        document.write("<h2>Series</h2>")
+        for (var i = 2; i < 21; i += 2) {
+            document.write(i + "k, ")
+        }
+
+        // question 7
+        var items = ["cake", "apple pie", "cookie", "chips", "patties"]
+        var user = prompt("Welcome to Malik Bakery. What do you wan to order sir/mada'am?")
+        var match = false;
+        for (var i = 0; i < items.length; i++) {
+            if (user === items[i]) {
+                match = true
+                alert(user + " is available at index "+items.indexOf(user) + " in our bakery")
+                break;
+            }
+        } 
+        if
+            (match == false) {
+            alert("We are sorry. " + user + " is not available in our bakery")
+
+        }
+     // question 8
+
+        var arr = [24,53,78,91,12]
+        var largestNum = arr[0];
+        for(var i = 0 ; i < arr.length; i++){
+            if(arr[i]>largestNum){
+                largestNum= arr[i]
+    
+            }
+        }
+ document . write ("<h2>Largest Number </h2>")
+ document.write("<br>"+ "Array Items: "+ arr)
+ document.write("<br>"+"The Largest Number is: "+largestNum);
+
+ // question 9
+
+var arr = [24,53,78,91,12]
+var smallNum = arr[0];
+for(var i = 0 ; i < arr.length; i++){
+if(arr[i]<smallNum){
+smallNum= arr[i]
+
+}
+}
+document . write ("<h2>Samllest Number </h2>")
+document.write("<br>"+ "Array Items: "+ arr)
+document.write("<br>"+"The Samllest Number is: "+smallNum);
+
+// question 10
+document . write ("<h2>Multiples of 5</h2>")
+for(var i = 5 ; i < 101 ; i += 5){
+    document.write(i ,",")
+}
+    </script>
+</body>
+
+</html>

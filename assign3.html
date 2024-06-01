@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="download.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="download.png" width="70px" alt="">
+        </div>
+        <div class="links">
+            <button><a href="index.html">Assignment # 1</a></button>
+            <button><a href="assign2.html">Assignment # 2</a></button>
+            <button><a href="assign3.html">Assignment # 3</a></button>
+            <button><a href="assign4.html">Assignment # 4</a></button>
+           
+        </div>
+    </div>
+    <br>
+    <h1>Assignment # 9
+    </h1>
+    <h4>JAVASCRIPT</h4>
+    <h4>ARRAYS ASSIGNMENT</h4>
+
+<script>
+// question 1 to 5
+    var std = [prompt("Enter Name ")]
+    var number = [2 ,3 ,4,5,6]
+    var array = ["rimsha ",6,1,2," sajid"]
+// question 7
+    document.write("<h3>'Qualifications: '</h3>")
+    var qualification = [,"SSC", "HSC", "BCS",
+            "BS", "BCOM", "MS","M. Phil", "PhD" ,"Masters" ]
+            for(var n = 1; n <=8; n++)
+            document.write(n + ") " + qualification [n]+"<br>");
+// question 8
+    var names = ["Micheal "," John","Tony "]
+    var score = [350 , 250, 230]
+    var total = 500
+document.write("<h3>Like Marksheet</h3>")
+
+document.write( "Score Of "+ names[0] +" is "+score[0] + " . Percentage: "+score[0]/total*100+"%" )
+document.write( "<br>"+ "<br>"+"Score Of "+ names[1] +" is "+score[1] + " . Percentage: "+score[1]/total*100+"%" )
+document.write("<br>"+ "<br>"+ "Score Of "+ names[2] +" is "+score[2] + " . Percentage: "+score[2]/total*100+"%" )
+
+
+// question 9
+document.write("<h3>Q:9</h3>")
+//  (a)colors add start what users wants
+    var colors = ["Red ","Green ", " Yellow "," Pruple"]
+document.write( colors)
+colors.unshift(prompt("Enter your colour (We Add this color in first number)"))
+document.write("<br>",colors)
+// (b)colors add end what users wants
+var colors = ["Red ","Green ", " Yellow "," Pruple"]
+colors.push(prompt("Enter your colour (We Add this color in last number"))
+document.write("<br>",colors)
+// (c)add 2 colors from beginning
+var colors = ["Red ","Green ", " Yellow "," Pruple"]
+colors.unshift("Pink ","Gray")
+document.write("<br>",colors)
+// (d)Remove First color
+var colors = ["Red ","Green ", " Yellow "," Pruple"]
+colors.shift()
+document.write("<br>" +colors)
+// (e)Remove last color
+var colors = ["Red ","Green ", " Yellow "," Pruple"]
+colors.pop()
+document.write("<br>" +colors)
+// (f)add index number what user want
+var colors = ["Red ","Green ", " Yellow "," Pruple"]
+colors.splice(prompt("Enter which index number you want to add a color"))
+colors.unshift(prompt("Enter which index number you want to add a color"))
+document.write("<br>",colors)
+//(g) delete color /number what user want
+var colors =  ["Red ","Green ", " Yellow "," Pruple"]
+colors.splice(prompt("Enter which index number you want to delete a color")),(prompt("Enter which index number you want to delete a color"))
+
+  document.write("<br>",colors )
+
+
+// question 10
+    var scores = [ 320, 230, 480, 120]
+     order = scores.sort()
+    document.write("<h3>Ascending Order</h3>")
+    document.write("Scores of Students: 320, 230, 480, 120")
+    document.write("<br>"+"Ordered Score of Students: "+ order )
+// question 11
+var cities = ["Karachi ","Lahore ","Islamabad ","Quetta ","Peshawar "]
+copy = cities.slice(2,4)
+document.write("<h43Cities List</h3>")
+document.write(cities)
+document.write("<h3>Cities After Slice</h3>")
+document.write(copy)
+
+// question 12
+    var text = ["This ", "is ","my ","Cat "]
+document.write("<br>"+"<h3>Array Text; </h3>"+text)
+var joinText = text.join(" ")
+document.write("<br>"+"<h3>After String: </h3>"+ joinText)
+// question 13
+var values = ["Keyboard ", "Mouse ","Printer ", "Monitor "]
+document.write("<h3>Device 13</h3>" )
+document.write(values)
+inLine = values.shift()
+document.write("<br>"+"Out: "+"<br>"+inLine)
+inLine = values.shift()
+document.write("<br>"+"Out: "+"<br>"+inLine)
+inLine = values.shift()
+document.write("<br>"+"Out: "+"<br>"+inLine)
+inLine = values.shift()
+document.write("<br>"+"Out: "+"<br>"+inLine)
+// question 14
+var values = ["Keyboard ", "Mouse ","Printer ", "Monitor "]
+document.write("<h3>Device 14</h3>" )
+document.write(values)
+reverse = values.pop()
+document.write("<br>"+"Out: "+"<br>"+reverse)
+reverse = values.pop()
+document.write("<br>"+"Out: "+"<br>"+reverse)
+reverse = values.pop()
+document.write("<br>"+"Out: "+"<br>"+reverse)
+reverse = values.pop()
+document.write("<br>"+"Out: "+"<br>"+reverse)
+// question 15
+var variety = prompt("In this which one  you are using? (Like Apple,Samsung,Motorola,Nokia,Sony,Haier   )")
+var phone = ["Apple ","Samsung ","Motorola ","Nokia ","Sony ","Haier"]
+document.write("<br>"+"<h3>Your Mobile </h3>"+variety)
+
+</script>
+</body>
+</html>
